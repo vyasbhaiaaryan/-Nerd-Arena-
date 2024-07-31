@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Arena</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Anime-style font */
+            background: #000000; /* Black background */
+            color: #FFFF00; /* Yellow text color */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #222222; /* Darker background for header and footer */
+            color: #FFFF00; /* Yellow text color */
+            padding: 20px;
+            text-align: center;
+        }
+        header a, footer a {
+            color: #FF4500; /* Orange-red for links */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header a:hover, footer a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #FF6347; /* Tomato red for headings */
+            font-family: 'Arial Black', Gadget, sans-serif; /* Bold font for headings */
+        }
+        .content {
+            padding: 20px;
+        }
+        .anime-item {
+            display: inline-block;
+            width: 220px;
+            margin: 10px;
+            text-align: center;
+            background-color: #333333; /* Darker background for items */
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid #FF6347; /* Tomato red border */
+        }
+        .anime-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .page {
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #444444; /* Darker background for form */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+            color: #FFFF00; /* Yellow color for labels */
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #555555; /* Slightly lighter border */
+            border-radius: 5px;
+            background-color: #333333; /* Dark background for input */
+            color: #FFFF00; /* Yellow color for input text */
+        }
+        form input[type="submit"] {
+            background-color: #FF6347; /* Tomato red background for submit button */
+            border: none;
+            color: #FFFF00; /* Yellow text color */
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #FF4500; /* Orange-red hover effect */
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nerd Arena</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#figures">Anime Figures</a> |
+            <a href="#offers">Special Offers</a> |
+            <a href="#catalog">Catalog</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="page">
+        <h2>Welcome to Nerd Arena</h2>
+        <p>Your one-stop destination for high-quality anime figures. Explore our collection and find your favorite characters.</p>
+        <p class="highlight">Check out our latest arrivals and special offers!</p>
+        
+        <h2>Featured Figures</h2>
+        <p class="anime-item">
+            <img src="https://via.placeholder.com/200" alt="Figure 1">
+            <br><strong>Figure 1: Sakura Haruno</strong>
+            <br>Price: ?4,149.67
+            <br>Description: A highly detailed figure of Sakura Haruno from Naruto.
+        </p>
+        <p class="anime-item">
+            <img src="https://via.placeholder.com/200" alt="Figure 2">
+            <br><strong>Figure 2: Goku Super Saiyan</strong>
+            <br>Price: ?5,809.32
+            <br>Description: Goku in his Super Saiyan form with this dynamic figure.
+        </p>
+    </section>
+
+    <section id="figures" class="page hidden">
+        <h2>Anime Figures Collection</h2>
+        <p>Explore our detailed collection of anime figures. Each figure is crafted with precision and care to bring your favorite characters to life.</p>
+        
+        <p class="anime-item">
+            <img src="https://via.placeholder.com/200" alt="Figure 3">
+            <br><strong>Figure 3: Luffy Gear Fourth</strong>
+            <br>Price: ?4,979.67
+            <br>Description: Featuring Monkey D. Luffy in his Gear Fourth transformation.
+        </p>
+        <p class="anime-item">
+            <img src="https://via.placeholder.com/200" alt="Figure 4">
+            <br><strong>Figure 4: Natsu Dragneel</strong>
+            <br>Price: ?4,500.00
+            <br>Description: A detailed figure of Natsu Dragneel from Fairy Tail.
+        </p>
+        <!-- Add more figures similarly -->
+    </section>
+
+    <section id="offers" class="page hidden">
+        <h2>Special Offers</h2>
+        <p>Discover our special offers on limited edition figures and exclusive deals.</p>
+        <p>Stay tuned for upcoming promotions and limited-time discounts on selected items. Don’t miss out on these amazing opportunities!</p>
+    </section>
+
+    <section id="catalog" class="page hidden">
+        <h2>Catalog</h2>
+        <p>For more details about our figures, you can download our comprehensive catalog.</p>
+        <p><a href="file:///C:/Users/khanr/OneDrive/Desktop/New%20folder/20220419121719120.pdf" target="_blank" style="color: #FF4500;">Download Catalog</a></p>
+    </section>
+
+    <section id="contact" class="page hidden">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, please feel free to contact us.</p>
+        <p>Name: Aaryan and Ritesh</p>
+        <p>Email: <a href="mailto:jaishreedavejalore@gmail.com" style="color: #FF4500;">jaishreedavejalore@gmail.com</a></p>
+        <p>Phone: +91-800-934-6729</p>
+        <h3>Contact Form</h3>
+        <form action="mailto:jaishreedavejalore@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nerd Arena. All rights reserved. <a href="#contact">Contact Us</a></p>
+        <p>Check out our <a href="https://www.youtube.com" target="_blank">YouTube Channel</a> for the latest updates!</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle manual page transitions
+        (function() {
+            var sections = document.querySelectorAll('.page');
+            var currentIndex = 0;
+
+            function showPage(index) {
+                sections.forEach((section, i) => {
+                    section.classList.toggle('hidden', i !== index);
+                });
+                currentIndex = index;
+            }
+
+            // Initially show the first page
+            showPage(currentIndex);
+
+            // Handle navigation clicks
+            document.querySelectorAll('header nav a').forEach((link, index) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    showPage(index);
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
